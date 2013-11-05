@@ -33,4 +33,11 @@ describe Matriz do
     end
   end
 
+  describe "Multiplicar por un escalar" do
+    it "Multiplicacion" do
+      ((@m3.x(2)).matriz.should == Matriz.new([[4,0,2],[6,0,0],[10,2,2]]).matriz)
+      ((@m1.x(-3)).matriz.should == Matriz.new([[-3,-9],[-6,0]]).matriz)
+    end
+  end
+
 end
