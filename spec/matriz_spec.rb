@@ -23,4 +23,14 @@ describe Matriz do
       @m3.to_s.should == "2 0 1 \n3 0 0 \n5 1 1 \n"
     end
   end
+
+  describe "Operaciones unarias" do
+    it "Traspuesta" do
+      (@m3.tras.matriz == Matriz.new([[2,3,5],[0,0,1],[1,0,1]]).matriz).should be_true
+    end
+    it "Determinante" do
+      (@m1.det.should == -6)
+    end
+  end
+
 end
