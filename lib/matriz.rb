@@ -57,4 +57,14 @@ class Matriz
     end
     aux
   end
+
+  def x(escalar)
+    aux = Matriz.new(@matriz)
+    for i in 0...@nFil do
+      for j in 0...@mCol do
+        aux.matriz[i][j] = @matriz[i][j] * escalar
+      end
+    end
+    aux
+  end
 end
