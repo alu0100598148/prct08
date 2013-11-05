@@ -40,4 +40,17 @@ describe Matriz do
     end
   end
 
+  describe "Operaciones con dos matrices" do
+    it "Se deben poder sumar dos matrices" do
+      ((@m1 + @m2).matriz.should == Matriz.new([[3,4],[2,1]]).matriz)
+    end
+    it "Se deben poder multiplicar dos matrices" do
+      ((@m1 * @m2).matriz.should == Matriz.new([[2,4],[4,2]]).matriz)
+      ((@m1 * @m4).matriz.should == Matriz.new([[10,1,9],[8,2,12]]).matriz)
+    end
+    it "Se deben poder restar dos matrices" do
+      ((@m1 - @m2).matriz.should == Matriz.new([[-1,2],[2,-1]]).matriz)
+    end
+  end
+
 end
