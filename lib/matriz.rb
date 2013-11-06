@@ -109,7 +109,11 @@ class Matriz
       for i in 0...@nFil do
         result[i] = Array.new
         for j in 0...mat.mCol do
-          result[i][j] = 0
+          if (mat.matriz[0][0].class == Fraccion)
+           result[i][j] = Fraccion.new(0, 1)
+          else
+           result[i][j] = 0
+          end
         end
       end
 

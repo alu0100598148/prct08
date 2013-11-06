@@ -53,6 +53,7 @@ describe Matriz do
     it "Se deben poder multiplicar dos matrices" do
       ((@m1 * @m2).matriz.should == Matriz.new([[2,4],[4,2]]).matriz)
       ((@m1 * @m4).matriz.should == Matriz.new([[10,1,9],[8,2,12]]).matriz)
+      ((@m5 * @m6).matriz.should == Matriz.new([[Fraccion.new(3, 2), Fraccion.new(3, 10)], [Fraccion.new(47, 24), Fraccion.new(67, 180)]]).matriz)
     end
     it "Se deben poder restar dos matrices" do
       ((@m1 - @m2).matriz.should == Matriz.new([[-1,2],[2,-1]]).matriz)
