@@ -1,4 +1,5 @@
 #! /usr/local/ruby/bin/ruby 
+require 'racional.rb'
 
 class Matriz
 
