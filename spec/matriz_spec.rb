@@ -1,4 +1,4 @@
-require 'lib/matriz.rb'
+require 'matriz'
 require 'rspec'
 
 describe Matriz do
